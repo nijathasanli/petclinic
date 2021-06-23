@@ -5,7 +5,7 @@ pipeline {
         stage('Build'){
             steps {
             // git 'https://github.com/spring-petclinic/spring-petclinic-angularjs.git'
-            sh 'ls -l && cd spring-petclinic-angularjs && ./mvnw clean install && cd spring-petclinic-server \
+            sh 'ls -l && cd pet-clinic-app && ./mvnw clean install && cd spring-petclinic-server \
             && ../mvnw spring-boot:run '
 
             }
