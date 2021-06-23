@@ -10,16 +10,15 @@ pipeline {
 
             }
         }
-        stage('Test'){
-            steps{
+        // stage('Test'){
+        //     steps{
 
-            }
-            post {
-                always {
-                    junit '**/target/TEST-*.xml'
-                }
-            }
+        //     }
+        //     post {
+        //         always {
+        //             junit '**/target/TEST-*.xml'
+        //         }
+        //     }
         }
     }
     
-}
